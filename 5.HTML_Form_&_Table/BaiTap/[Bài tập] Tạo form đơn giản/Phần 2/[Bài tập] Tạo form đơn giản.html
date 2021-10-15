@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form đơn giản</title>
+    <style>
+        .textLabel{
+        color:blue;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="">
+
+    <h1 style="color: white ; background: orange ; "> Sở thích của bạn</h1>
+    <table>
+        <tr>
+            <th><p style="color: blue">Họ và tên </p></th>
+            <td><input type="text" name="yourName" value="" size="20"/></td>
+        </tr>
+        <tr>
+            <th><p style="color: blue"> Email </p></th>
+            <td><input type="email" name="Email" value="" size="20"/></td>
+        </tr>
+        <tr>
+            <th><p style="color: blue">Sở thích </p></th>
+            <td style="color:orange"><input type="checkbox" name="hobby">Thể thao
+                <input type="checkbox" name="hobby">Âm nhạc
+                <input type="checkbox" name="hobby">Đọc sách <br>
+                <input type="checkbox" name="hobby">Lướt web
+                <input type="checkbox" name="hobby">Chơi game
+                <input type="checkbox" name="hobby">Điện ảnh<br>
+                <input type="checkbox" name="hobby"> Du lịch
+            </td>
+        </tr>
+
+        <tr>
+            <th><input type="submit" name="submitForm" value="Gửi thông tin">
+                <input type="reset" name="resetForm" value="Nhập lại"></th>
+        </tr>
+
+    </table>
+</form>
+<br>
+<hr>
+<h1 style="color: blue ; background: aqua ; "> Đăng kí học viên</h1>
+<form action="" method="post">
+    <label for="" class="textLabel">Họ và tên</label>
+    <input type="text" name="yourName" id="" style="margin-left: 20px"> <br> <br>
+    
+    <label for="" class="textLabel">Ngày sinh</label>
+    <input type="date" name="dateOfBirth" id="" style="margin-left: 20px"> <br> <br>
+    
+    <label for="" class="textLabel">Giới tính</label>
+    <input type="radio" name="sex" id="" style="margin-left: 50px">
+    <label>Nam</label>
+    <input type="radio" name="sex" id="" style="margin-left: 20px">
+    <label>Nữ</label> <br>
+    
+    <label for="" class="textLabel">Địa chỉ <textarea name="address" id="" cols="30" rows="3" style="margin-left: 40px">
+    </textarea> </label> <br> <br>
+   
+    <label class="textLabel">Lớp</label>
+        <select name="class" id="" style="margin-left: 60px">
+            <option selected>--Chọn lớp --</option>
+            <option>A9-02</option>
+            <option>A9-03</option>
+        </select> <br> <br>
+    <label class="textLabel">Email</label>
+ <input type="email" name="yourEmail" size="30" style="margin-left: 50px" > <br> <br>
+    <label for=""class="textLabel" >Điện thoại</label>
+<input type="number" name="phoneNumber" size="11" style="margin-left: 20px">
+<br> <br>
+<input type="submit" name="signUp" value="Đăng ký">
+    <input type="reset" name="resetButton" value="Nhập lại">
+</form>
+</body>
+</html>

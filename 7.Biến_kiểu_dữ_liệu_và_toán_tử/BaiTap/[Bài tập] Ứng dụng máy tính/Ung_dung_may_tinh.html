@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <title>ung dung may tinh</title>
 
-    <script>
-        let number1 = document.getElementById("number1");
-        let number2 = document.getElementById("number2");
-        let result;
-​
-    function addition() {
-        result = parseInt(number1.value) + parseInt(number2.value);
-        document.getElementById("result").innerHTML =  " <b style='color: red'> Result addition </b>" + result;
-    }
 
-    </script>
 </head>
 <body>
+
 
 ​
 <input type="text" id="number1">
 <input type="text" id="number2"> <br><br>
 ​
 <button onclick="addition()">Addition(+)</button>
-<button>Subtraction(-)</button>
-<button>Multiplication(X)</button>
-<button>Division(/)</button>
+<button onclick="Subtraction()">Subtraction(-)</button>
+<button onclick="Multiplication()">Multiplication(X)</button>
+<button onclick="Division()">Division(/)</button>
 ​
 <p id="result"></p>
 ​
+<script>
+    let number1 = document.getElementById("number1");
+    let number2 = document.getElementById("number2");
+    let result;
 
+    function addition() {
+        result = parseInt(number1.value) + parseInt(number2.value);
+        document.getElementById("result").innerHTML = " <b style='color: red'> Result addition </b>" + result;
+    }
+
+    function Subtraction() {
+        result = parseInt(number1.value) - parseInt(number2.value);
+        document.getElementById("result").innerHTML = " <b style='color: red'> Result addition </b>" + result;
+    }
+
+    function Multiplication() {
+        result = parseInt(number1.value) * parseInt(number2.value);
+        document.getElementById("result").innerHTML = " <b style='color: red'> Result addition </b>" + result;
+    }
+
+    function Division() {
+        result = parseInt(number1.value) / parseInt(number2.value);
+        document.getElementById("result").innerHTML = " <b style='color: red'> Result addition </b>" + result;
+    }
+
+</script>
 
 </body>
 </html>

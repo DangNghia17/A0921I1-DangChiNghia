@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<script>
+    let doanhthu = parseInt(prompt('Nhập vào tổng tiền doanh thu của bạn trong tháng này :',' >0 và <10.000.000vnđ'));
+    let phantram;
+    let hoahong;
+
+    if (doanhthu > 0 && doanhthu <= 3000000) {
+        phantram = 0.03;
+        hoahong = doanhthu * phantram;
+        document.writeln('Hoa hồng của bạn là ' +hoahong + ' vnđ');
+    } else if (doanhthu > 3000000 && doanhthu <= 50000000) {
+        phantram = 0.05;
+        hoahong = doanhthu * phantram;
+        document.writeln('Hoa hồng của bạn là ' +hoahong + ' vnd');
+    } else {
+        phantram = 0.08;
+        hoahong = doanhthu * phantram;
+        document.writeln('Hoa hồng của bạn là ' +hoahong + ' vnđ');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let rec1 = parseFloat(prompt("Nhập vào giá trị a"));
+    let rec2 = parseFloat(prompt("Nhập vào giá trị b"));
+    let rec3 = parseFloat(prompt("Nhập vào giá trị c"));
+
+    if(rec1 > 0 && rec2 > 0 && rec3 >0){
+        if(rec1 + rec2 > rec3 && rec1 + rec3 > rec2 && rec2 + rec3 > rec1){
+           alert("Là 1 Hình Tam Giác");
+        }else{
+           alert("Không phải là 1 hình tam giác");
+        }
+    }else{
+        alert("Không hợp lệ!!");
+    }
+</script>
+</body>
+</html>

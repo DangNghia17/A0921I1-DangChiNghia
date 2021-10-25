@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập vào giá trị a'));
+    let b = parseFloat(prompt('Nhập vào giá trị b'));
+    let c = parseFloat(prompt('Nhập vào giá trị c'));
+    let d = parseFloat(prompt('Nhập vào giá trị d'));
+
+    let delta = (b * b) - 4 * a * c;
+    let x;//dành cho pt bậc 1
+    let x1;
+    let x2;
+
+    if (a == 0) {//pt bậc 1
+        if (b == 0) {
+            alert("Phương trình vô ngiệm");
+        } else {
+            if (c == 0) {
+                x = d / b;
+               alert("x = " + x);
+            } else {
+                x = (d - c) / b;
+                alert("x = " + x);
+            }
+        }
+    }else{//pt bậc 2
+        if(delta < 0){
+            alert("Phương trình vô nghiệm");
+        }else if(delta == 0){
+            x1 = x2 = (-b2)/2*a2;
+            alert("Phương trình có nghiệm kép: "+ x1);
+        }else{
+            x1 = ((-b2 + Math.sqrt(delta)) / 2*a2);
+            x2 = ((-b2 - Math.sqrt(delta)) / 2*a2);
+          alert("Phương trình có 2 nghiệm phân biệt là: " + "x1 = " + x1 + " ;x2 = " + x2);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+
+<script>
+    alert('Bài 6: Giải phương trình bậc 1.)
+    let a1 = parseFloat(prompt('Nhập vào giá trị đầu'));
+    let b1 = parseFloat(prompt('Nhập vào giá trị tiếp theo'));
+    let c1 = parseFloat(prompt('Nhập vào giá trị cuối'));
+
+    let result;
+    if (a1 == 0) {
+        alert(' Phương trình vô nghiệm');
+    } else {
+        if (b1 == 0) {
+            result = c1 / a1;
+            alert("x = " + result);
+        } else {
+            result = (c1 - b1) / a1;
+            alert("x = " + result);
+        }
+    }
+</script>
+</body>
+</html>

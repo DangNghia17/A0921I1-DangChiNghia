@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    console.log('Viết chương trình khởi tạo mảng số nguyên. ' +
+        'Hiển hiện giá trị lớn nhất trong mảng đó. ' +
+        'In ra giá trị trung bình của các phần tử trong mảng.')
+
+    //code
+    let numbers = [13, 1, 4, 5, 6, 87, 35, 23, 75, 665];
+    let max = numbers[0];
+    let trungBinh = 0;
+    let sum = 0 ;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+        if (numbers[i] > max) {
+            max = numbers;
+        }
+    }
+    trungBinh = sum / numbers.length ;
+    console.log('Giá trị lớn nhất của mảng là ' + max);
+    console.log('Giá trị trung bình của các phần tử trong mảng là ' + trungBinh);
+</script>
+</body>
+</html>

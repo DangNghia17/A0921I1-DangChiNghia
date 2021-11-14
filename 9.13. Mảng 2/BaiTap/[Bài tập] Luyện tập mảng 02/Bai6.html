@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<script>
+    let array1 = ['--aaa', 'bbb', '--ccc', '1710', '-2002', '-8888', 'zxczxc', '0209'];
+    let newarray1 = array1.map(function (kiTu) {
+        for (i = 0 ; i <array1.length ; i++){
+            if (array1[i]=='-'){
+                return '_' ;
+            }
+        }
+    })
+    document.write(newarray1);
+
+</script>
+</body>
+</html>

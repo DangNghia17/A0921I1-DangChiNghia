@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.</title>
+</head>
+<body>
+<input type="button" id="show" value="Hiển thị mảng" onclick="show()">
+<input type="button" id="reserve" value="Đảo ngược" onclick="reverse()">
+<p id="result"></p>
+<script>
+    console.log('Khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.');
+    //code
+    let array = ['a', 123, 1111, 'ákdkasjd'];
+    function show() {
+        document.getElementById("result").innerHTML = ' Mảng ban đầu là ' + array;
+    }
+    function reverse() {
+        document.getElementById("result").innerHTML = ' Mảng sau khi đảo ngược là ' + array.reverse();
+    }
+</script>
+</body>
+</html>

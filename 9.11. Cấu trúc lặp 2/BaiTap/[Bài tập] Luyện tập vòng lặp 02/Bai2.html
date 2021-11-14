@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+<p>Tính giai thừa 1 số nguyên dương</p>
+<input type="text" id='num'>
+<input type="submit" value="submit" onclick="bai2()">
+<p id="bai2"></p>
+
+<script>
+    let num = parseInt(document.getElementById("num").value);
+    let result = 1;
+    for(let i = 1; i <= num; i++){
+        result *= i;
+    }
+    document.getElementById("bai2").innerHTML = result;
+    }
+
+</script>
+</body>
+</html>

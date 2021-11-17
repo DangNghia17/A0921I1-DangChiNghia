@@ -5,6 +5,28 @@
     <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
 </head>
 <body>
+<input type="number" id="number" placeholder="Input your number to convert" >
+<input type="submit" id="footToMeter" value="Foot To Meter" onclick="footToMeter()">
+<input type="submit" id="meterToFoot" value="Meter To Foot" onclick="meterToFoot()">
+<p id="result"></p>
 
+
+<script>
+    let number = document.getElementById('number');
+    let result = 0 ;
+
+    function footToMeter(num_foot){
+        let number_foot = parseFloat(number.value);
+        result = 0.305 * number_foot ;
+        document.getElementById('result').innerHTML = result + "ft" ;
+    }
+
+    function meterToFoot(num_meter) {
+        let number_meter = parseFloat(number.value);
+        result = 3.279 * number_meter;
+        document.getElementById('result').innerHTML = result + "m";
+
+    }
+</script>
 </body>
 </html>

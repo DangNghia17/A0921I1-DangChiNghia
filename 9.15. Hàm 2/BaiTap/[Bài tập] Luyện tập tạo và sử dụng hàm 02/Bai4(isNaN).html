@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+            <!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. -->
+            <!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+
+
+            <input type="text" id="numInt" placeholder="Nhập số nguyên">
+            <input type="submit" value="Kiểm tra" onclick="testNum()">
+            <p id="result"></p>
+<script>
+            function testNum() {
+                num4 = (document.getElementById('numInt').value);
+                if( !isNaN(num4))   {
+                    document.getElementById('result').innerHTML = "Đây là ký tự số !" ;
+                }else {
+                    document.getElementById('result').innerHTML = "Đây không phải là ký tự số !" ;
+
+                }
+            }
+            /** sử dụng hàm isNaN ( is not a number ) và ! để xác định kiểu number **/
+
+
+</script>
+</body>
+</html>

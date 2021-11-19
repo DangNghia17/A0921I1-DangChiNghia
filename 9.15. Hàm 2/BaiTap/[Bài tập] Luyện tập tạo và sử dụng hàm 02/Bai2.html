@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<input type="number" id="R" placeholder="Nhập bán kính hình tròn">
+<input type="submit" value="Tính chu vi hình tròn" onclick="chuVi()">
+<input type="submit" value="Tính diện tích hình tròn" onclick="dienTich()">
+<p id="result"></p>
+
+<script>
+    function chuVi() {
+        let radius1 = parseFloat(document.getElementById('R').value);
+        result = (radius1) * 3,14 ;
+        document.getElementById('result').innerHTML = result + "cm";
+    }
+    function dienTich() {
+        let radius2 = parseFloat(document.getElementById('R').value);
+        result = (radius2*2) * 3,14 ;
+        document.getElementById('result').innerHTML = result + "(cm^2) " ;
+    }
+
+</script>
+</body>
+</html>

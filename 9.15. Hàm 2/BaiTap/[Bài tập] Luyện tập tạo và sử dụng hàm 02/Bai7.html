@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+    <!--    Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+
+</head>
+<body>
+<input type="submit" value="Click here!" onclick="swapNum(4,6)">
+<p id="result"></p>
+<script>
+    function swapNum(a, b) {
+        temp = a;
+        a = b;
+        b = temp;
+        document.getElementById('result').innerHTML = '' + a + ',' + b;
+    }
+</script>
+</body>
+</html>

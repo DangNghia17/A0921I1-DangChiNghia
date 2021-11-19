@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Bai1</title>
+<!--    Viết hàm tính bình phương của một số bất kỳ được đưa vào. -->
+<!--    Gọi hàm vừa xây dựng được.-->
 </head>
 <body>
- //đang làm - 17/11
+<input type="number" id="num" placeholder="Nhập số tại đây">
+<input type="submit" value="Tính bình phương" onclick="binhPhuong()">
+<p id="result"></p>
+
+<script>
+        function binhPhuong() {
+            let num = parseFloat(document.getElementById('num').value);
+            result = num*num;
+            document.getElementById('result').innerHTML = result ;
+        }
+</script>
 </body>
 </html>

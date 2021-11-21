@@ -8,15 +8,23 @@
 <!--    Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,-->
 <!--    kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. -->
 <!--    Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
-    <input type="submit" value="Hiển thị đảo ngược mảng đã khai báo " onclick="arrayShow()">
-    <p id="result"></p>
+<input type="submit" value="Hiển thị đảo ngược mảng đã khai báo " onclick="arrayShow()">
+<p id="result"></p>
 
 <script>
-            /** khong biet lam hic :)) **/
-            let array = ['Nghia~','Hoa`',123, 6868, 1710, ','];
-            function arrayShow() {
-                while (array.some())
+    /** khong biet lam hic :)) **/
+    let array = ['Nghia~', 'Hoa`', 123, 6868, 1710, ','];
+
+    function arrayShow(array1, kiTu) {
+        for (i = 0; i < array1.length; i++) {
+            if (kiTu == array1[i]) {
+                return true;
             }
+        }
+        return false;
+    }
+        document.getElementById('result').innerHTML = arrayShow(array,";");
+
 </script>
 </body>
 </html>
